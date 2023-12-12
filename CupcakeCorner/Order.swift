@@ -11,24 +11,6 @@ import Foundation
 @Observable
 class Order: Codable {
     
-//    var activities = [ActivityItem]() {
-//        didSet {
-//            if let encoded = try? JSONEncoder().encode(activities) {
-//                UserDefaults.standard.set(encoded, forKey: "Activities")
-//            }
-//        }
-//    }
-//    
-//    init() {
-//        if let savedActivities = UserDefaults.standard.data(forKey: "Activities") {
-//            if let decodedActivities = try? JSONDecoder().decode([ActivityItem].self, from: savedActivities) {
-//                activities = decodedActivities
-//                return
-//            }
-//        }
-//        activities = []
-//    }
-    
     enum CodingKeys: String, CodingKey {
         case _type = "type"
         case _quantity = "quantity"
@@ -43,9 +25,6 @@ class Order: Codable {
     
     static let types = ["Vanilla", "Strawberry", "Chocolate", "Rainbow"]
     
-    let encoder = JSONEncoder()
-    
-    
     var type: Int = 0
     var quantity: Int = 3
     
@@ -53,6 +32,9 @@ class Order: Codable {
     var streetAddress: String = ""
     var city: String = ""
     var zip: String = ""
+    
+    var extraFrosting: Bool = false
+    var addSprinkles: Bool = false
     
     var specialRequestEnabled: Bool = false {
         didSet {
@@ -62,9 +44,6 @@ class Order: Codable {
             }
         }
     }
-    
-    var extraFrosting: Bool = false
-    var addSprinkles: Bool = false
     
     var hasValidAddress: Bool {
         if name.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty || streetAddress.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty || city.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty || zip.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
@@ -90,4 +69,5 @@ class Order: Codable {
         
         return cost
     }
+    
 }

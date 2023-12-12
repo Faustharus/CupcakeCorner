@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E4C838D2B28AA3500A890F0 /* ObjectSavable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4C838C2B28AA3500A890F0 /* ObjectSavable.swift */; };
 		9E93384B2B24ABDA00C59BCE /* CupcakeCornerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E93384A2B24ABDA00C59BCE /* CupcakeCornerApp.swift */; };
 		9E93384D2B24ABDA00C59BCE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E93384C2B24ABDA00C59BCE /* ContentView.swift */; };
 		9E93384F2B24ABDB00C59BCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E93384E2B24ABDB00C59BCE /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9E4C838C2B28AA3500A890F0 /* ObjectSavable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectSavable.swift; sourceTree = "<group>"; };
 		9E9338472B24ABDA00C59BCE /* CupcakeCorner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CupcakeCorner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E93384A2B24ABDA00C59BCE /* CupcakeCornerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupcakeCornerApp.swift; sourceTree = "<group>"; };
 		9E93384C2B24ABDA00C59BCE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				9EB287902B2650DA000B7468 /* AddressView.swift */,
 				9EB287922B26537F000B7468 /* CheckoutView.swift */,
 				9EB2878E2B264A28000B7468 /* Order.swift */,
+				9E4C838C2B28AA3500A890F0 /* ObjectSavable.swift */,
 				9E93384E2B24ABDB00C59BCE /* Assets.xcassets */,
 				9E9338502B24ABDB00C59BCE /* Preview Content */,
 			);
@@ -149,6 +152,7 @@
 				9EB2878F2B264A28000B7468 /* Order.swift in Sources */,
 				9EB287912B2650DA000B7468 /* AddressView.swift in Sources */,
 				9EB287932B26537F000B7468 /* CheckoutView.swift in Sources */,
+				9E4C838D2B28AA3500A890F0 /* ObjectSavable.swift in Sources */,
 				9E93384D2B24ABDA00C59BCE /* ContentView.swift in Sources */,
 				9E93384B2B24ABDA00C59BCE /* CupcakeCornerApp.swift in Sources */,
 			);
